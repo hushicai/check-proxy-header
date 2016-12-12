@@ -24,9 +24,7 @@ router.get('/', function *(next) {
 
 router.get('/getIp', function *(next) {
   this.body = {
-    code: 0,
-    msg: '',
-    data: this.request.ip
+    ip: this.request.ip
   }
 });
 
