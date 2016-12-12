@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
     "koa-views": "^4.1.0",
     "underscore": "^1.8.3"
   },
