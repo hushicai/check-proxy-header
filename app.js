@@ -15,11 +15,13 @@ app.use(
   })
 );
 
-
 var router = require('koa-router')();
 
 router.get('/', function *(next) {
-  this.body = this.headers;
+  var extend = require('util')._extend;
+  var d = extend({ip: this.request.ip}, this.headers)
+
+  this.body = d;
 });
 
 router.get('/getIp', function *(next) {
