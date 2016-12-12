@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
+    "start": "pm2 start app.js --watch",
     "debug": "node --debug-brk --inspect app.js"
   },
   "repository": {
