@@ -1,0 +1,26 @@
+{
+  "name": "check-proxy-header",
+  "version": "1.0.0",
+  "description": "check proxy header",
+  "main": "app.js",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-views": "^4.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node --debug-brk --inspect app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hushicai/check-proxy-header.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hushicai/check-proxy-header/issues"
+  },
+  "homepage": "https://github.com/hushicai/check-proxy-header#readme"
+}
