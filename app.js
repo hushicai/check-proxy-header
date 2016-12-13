@@ -17,6 +17,10 @@ app.use(
 
 var router = require('koa-router')();
 
+router.get('/', function *(next) {
+  this.body = 'welcome';
+});
+
 router.get('/getAnonymity', function *(next) {
   var extend = require('util')._extend;
   var d = extend({ip: this.request.ip}, this.headers)
