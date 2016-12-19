@@ -21,6 +21,13 @@ router.get('/', function *(next) {
   this.body = 'welcome';
 });
 
+router.get('/dumpHeaders', function *(next) {
+  console.log(this.headers);
+  yield this.render('headers', {
+    headers: this.headers
+  });
+});
+
 router.get('/getAnonymity', function *(next) {
   var extend = require('util')._extend;
   var d = extend({ip: this.request.ip}, this.headers)
