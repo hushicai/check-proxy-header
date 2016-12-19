@@ -22,9 +22,12 @@ router.get('/', function *(next) {
 });
 
 router.get('/dumpHeaders', function *(next) {
-  console.log(this.headers);
+  var headers = this.headers;
+
+  headers.ip = this.request.ip;
+  console.log(headers);
   yield this.render('headers', {
-    headers: this.headers
+    headers: headers
   });
 });
 
